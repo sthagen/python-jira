@@ -51,7 +51,7 @@ Pass a tuple of (username, password) to the ``auth`` constructor argument::
 
     auth_jira = JIRA(auth=('username', 'password'))
 
-Using this method, authentication happens during then initialization of the object. If the authentication is successful,
+Using this method, authentication happens during the initialization of the object. If the authentication is successful,
 the retrieved session cookie will be used in future requests. Upon cookie expiration, authentication will happen again transparently.
 
 HTTP BASIC
@@ -340,8 +340,8 @@ Here are some examples::
         jira.add_attachment(issue=issue, attachment=f)
 
     # attach file from memory (you can skip IO operations). In this case you MUST provide `filename`.
-    import StringIO
-    attachment = StringIO.StringIO()
+    from io import StringIO
+    attachment = StringIO()
     attachment.write(data)
     jira.add_attachment(issue=issue, attachment=attachment, filename='content.txt')
 
