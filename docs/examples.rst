@@ -61,6 +61,11 @@ Pass a tuple of (username, password) to the ``basic_auth`` constructor argument:
 
     auth_jira = JIRA(basic_auth=('username', 'password'))
 
+Or pass a tuple of (email, api_token) to the ``basic_auth`` constructor argument (JIRA cloud)::
+
+    auth_jira = JIRA(basic_auth=('email', 'API token'))
+
+
 OAuth
 ^^^^^
 
@@ -250,6 +255,11 @@ dedicated method::
 Get an individual comment if you know its ID::
 
     comment = jira.comment('JRA-1330', '10234')
+
+Get comment author name and comment creation timestamp if you know its ID::
+
+    author = jira.comment('JRA-1330', '10234').author.displayName
+    time = jira.comment('JRA-1330', '10234').created
 
 Adding, editing and deleting comments is similarly straightforward::
 
