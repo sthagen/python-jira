@@ -72,7 +72,7 @@ oauthlib==3.1.1
     # via
     #   jira (setup.cfg)
     #   requests-oauthlib
-packaging==20.9
+packaging==21.0
     # via
     #   pytest
     #   pytest-sugar
@@ -168,7 +168,7 @@ six==1.16.0
     #   traitlets
 snowballstemmer==2.1.0
     # via sphinx
-sphinx==4.0.2
+sphinx==4.0.3
     # via
     #   jira (setup.cfg)
     #   sphinx-rtd-theme
@@ -198,7 +198,7 @@ traitlets==4.3.3
     # via ipython
 typing-extensions==3.10.0.0
     # via importlib-metadata
-urllib3==1.26.5
+urllib3==1.26.6
     # via requests
 wcwidth==0.2.5
     # via prompt-toolkit
@@ -208,7 +208,7 @@ xmlrunner==1.7.7
     # via jira (setup.cfg)
 yanc==0.3.3
     # via jira (setup.cfg)
-zipp==3.4.1
+zipp==3.5.0
     # via importlib-metadata
 
 # The following packages are considered to be unsafe in a requirements file:
